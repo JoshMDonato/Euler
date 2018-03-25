@@ -37,9 +37,9 @@ public class Euler003 {
 
     //Gets and returns the largest prime factor of a list of prime factors.
     //In this case, it's always the last element of the vector.
-    private static int getLargestPrimeFactor(Vector v)
+    public static long getLargestPrimeFactor(Vector v)
     {
-        return (int)v.lastElement();
+        return (long)v.lastElement();
     }
 
     //Finds and returns the prime factorization of n as an ordered vector of integers.
@@ -53,18 +53,18 @@ public class Euler003 {
         while((n&1) == 0)
         {
             n /= 2;
-            v_Factors.add(2);
+            v_Factors.add(2L);
         }
 
         //Try to find all factors which equal 3.
         while((n%3) == 0)
         {
             n /= 3;
-            v_Factors.add(3);
+            v_Factors.add(3L);
         }
 
         //All other prime factors take the form of 6k-1 or 6k+1.
-        for(int i = 5; i <= n; i += 2)
+        for(long i = 5; i <= n; i += 2)
         {
             //Find prime factors which equal i.
             //If there is one, i must be prime, otherwise i could be factored into numbers already checked.
