@@ -1,35 +1,36 @@
-import java.io.PrintStream;
+/**
+    =========================
+    ===== PROJECT EULER =====
+    =========================
+
+    Problem 1
+
+    https://projecteuler.net/problem=1
+
+    If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
+    The sum of these multiples is 23.
+    Find the sum of all the multiples of 3 or 5 below 1000.
+
+
+
+    Generalized to find the sum of all multiples of A or B below N.
+    Optimized to O(1) by using arithmetic sum of first m integers in place of loops.
+**/
 
 public class Euler001 {
 
-    /*
-        =========================
-        ===== PROJECT EULER =====
-        =========================
-
-        Problem 1
-
-        https://projecteuler.net/problem=1
-
-        If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
-        The sum of these multiples is 23.
-        Find the sum of all the multiples of 3 or 5 below 1000.
-
-
-
-        Generalized to find the sum of all multiples of A or B below N.
-        Optimized to O(1) by using arithmetic sum of first m integers in place of loops.
-    */
-
-    private static final int LIMSUP_N = 1000; //Normally 1000.
-    private static final int FACTOR_A = 3; //Normally 3.
-    private static final int FACTOR_B = 5; //Normally 5.
+    public static final int LIMSUP_N = 1000; //Normally 1000.
+    public static final int FACTOR_A = 3; //Normally 3.
+    public static final int FACTOR_B = 5; //Normally 5.
 
     //Program starts and stops here.
-    public static void main(String []args)
+    public static void main(String[] args)
     {
-        //Get the sum and print it.
-        System.out.format("%nThe sum of all multiples of %d and %d below %d is %d", FACTOR_A, FACTOR_B, LIMSUP_N, getSum(LIMSUP_N));
+        //Do it!
+        System.out.format("%nThe sum of all multiples of %d and %d below %d is %d.", FACTOR_A, FACTOR_B, LIMSUP_N, getSum(LIMSUP_N));
+
+        //Goodbye.
+        System.out.format("%n%n");
         return;
     }
 
