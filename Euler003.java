@@ -1,4 +1,4 @@
-/*
+/**
     =========================
     ===== PROJECT EULER =====
     =========================
@@ -14,7 +14,7 @@
 	
 	Generalized to find the largest prime factor of N.
 	Not optimized very well; uses trial divisions but tries to minimize the amount of divisions as much as possible.
-*/
+**/
 
 package io.github.joshmdonato.Euler;
 

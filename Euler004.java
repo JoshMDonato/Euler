@@ -1,4 +1,4 @@
-/*
+/**
     =========================
     ===== PROJECT EULER =====
     =========================
@@ -16,7 +16,7 @@
 	This solution uses a function which gets a complete list of factors.
 	While this is almost certainly not necessary, the function will be useful in future problems.
 	However, this function probably won't have to be called more than about 100 times.
-*/
+**/
 
 package io.github.joshmdonato.Euler;
 
