@@ -16,6 +16,8 @@
 	Not optimized very well; uses trial divisions but tries to minimize the amount of divisions as much as possible.
 */
 
+package io.github.joshmdonato.Euler;
+
 import java.util.Vector;
 
 public class Euler003 {
@@ -26,7 +28,7 @@ public class Euler003 {
     public static void main(String[] args)
     {
         //Do it!
-        System.out.format("%nThe largest prime factor of %d is %d.", PRODUCT_N,getLargestPrimeFactor(primeFactorization(PRODUCT_N)));
+        System.out.format("%nThe largest prime factor of %d is %d.", PRODUCT_N,getLargestPrimeFactor(getPrimeFactorization(PRODUCT_N)));
 
         //Goodbye.
         System.out.format("%n%n");
@@ -40,8 +42,8 @@ public class Euler003 {
         return (int)v.lastElement();
     }
 
-    //Finds and returns the prime factorization of n as an ordered array of integers.
-    private static Vector primeFactorization(long n)
+    //Finds and returns the prime factorization of n as an ordered vector of integers.
+    public static Vector getPrimeFactorization(long n)
     {
         Vector v_Factors = new Vector();
         v_Factors.clear();
